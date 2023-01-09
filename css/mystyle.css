@@ -119,16 +119,6 @@ section.fadeIn {
     color: #222;
 }
 
-/* .service_feature_img{
-    background:url('../img/feature.jpg');
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-clip:content-box;
-    background-size: cover;
-} */
-
-
-
 .homepage_expTitle {
     color: #fff!important;
     font-size: 42px!important;
@@ -148,6 +138,11 @@ section.fadeIn {
     -webkit-animation: fadeIn .8s;
     animation: fadeIn .8s;
 }
+
+.contact-us a{
+    color: #fff;
+}
+
 
 @media (min-width: 551px) and (max-width: 800px){
     .homepage_form-container__2YdWo {
