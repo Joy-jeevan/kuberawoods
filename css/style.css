@@ -9677,3 +9677,9 @@ h6 {
   padding: 0;
   list-style-type: none;
 }
+
+
+.no-click{
+  pointer-events: none;
+  
+}
