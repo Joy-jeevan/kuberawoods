@@ -158,6 +158,9 @@ section.fadeIn {
 
 
 @media (max-width: 768px){
+    h5, .h5 {
+        font-size: 1rem;
+    }
     .homepage_container .homepage_overlay {
         padding: 6% 0;
     }
@@ -166,11 +169,20 @@ section.fadeIn {
         width: 100%;
     }
 
-    #bfcForm_popup-btn__3za3v .bfcForm_registerLoginContainer__lrgC4, .bfcForm_registerLoginContainer__lrgC4 {
-        border-radius: 8px;
-        margin: 3% auto;
-        width: 90%!important;
+    .homepage_container .homepage_overlay.homepage_rightForm{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .service-steps .nav.nav-tabs{
+        justify-content: space-between;
+    }
+    .service-steps .nav-link{
+        margin-right: 0px;
+    }
+
+
     .homepage_container .homepage_overlay-wrapper h1 {
         color: #222;
         font-size: 20px;
@@ -181,6 +193,10 @@ section.fadeIn {
         margin-right: auto;
         text-align: center;
         width: 90%;
+    }
+
+    .homepage_container .homepage_form_container.card{
+        margin-top: 70px;
     }
 }
 
