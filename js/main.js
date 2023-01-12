@@ -138,6 +138,22 @@
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
         ]
     });
+
+    $('#SubmitForQuote').click(function(event){
+        event.preventDefault();
+        let formlist=[];
+        $("#bfcContainer .form-control").each(function() {
+           let formItem={};
+           formItem.name=$(this).attr('name');
+           formItem.value=$(this).val();
+           formlist.push(formItem)
+           console.log("namme--value",$(this).attr('name'),$(this).val() );
+        })
+        
+        console.log("quote log",window);
+        sessionStorage.setItem("quoteList",JSON.stringify(formlist))
+        window.location.href = "/contact.html";
+    })
     
 })(jQuery);
 
