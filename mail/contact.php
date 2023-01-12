@@ -20,7 +20,7 @@ $additionalServices = strip_tags(htmlspecialchars($_POST['additionalServices']))
 $Address = strip_tags(htmlspecialchars($_POST['Address']));
 
 $to = "sales@kuberawoods.com,joy@kuberawoods.com"; // Change this email to your //
-$subject = "$m_subject:  $name";
+$subject = "Quote For :  $name";
 $body = "You have received a new message from your website contact form.\n\n".
 "Here are the details:\n\nName: $name\n\n\nEmail: $email\n\Phone: $phone\n\nRemarks: $message".
 "\n\nProperty Type: $propertyType\n\n\nUnit Type: $unitType\n\nBudget: $Budget\n\nRoom Type: $RoomType".
