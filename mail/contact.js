@@ -3,12 +3,14 @@ $(function () {
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
+            console.log($form, event, errors)
         },
         submitSuccess: function ($form, event) {
             event.preventDefault();
             var name = $("#contactForm input#name").val();
             var email = $("#contactForm input#email").val();
             var message = $("#contactForm textarea#message").val();
+            // var subject = $("#contactForm input#subject").val();
             var phone = $("#contactForm input#phoneNumber").val();
             var propertyType = $("#contactForm input#propertyType").val();
             var unitType = $("#contactForm input#unitType").val();
@@ -18,7 +20,7 @@ $(function () {
             var areaSize = $("#contactForm input#areaSize").val();
             var additionalServices = $("#contactForm input#additionalServices").val();
             var Address = $("#contactForm textarea#Address").val();
-            
+            // console.log(name, email, message, subject);
 
             $this = $("#sendMessageButton");
             $this.prop("disabled", true);
@@ -30,6 +32,7 @@ $(function () {
                     name: name,
                     email: email,
                     message: message,
+                    // subject:subject,
                     phone:phone,
                     propertyType:propertyType,
                     unitType:unitType,
