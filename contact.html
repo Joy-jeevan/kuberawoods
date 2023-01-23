@@ -73,7 +73,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a href="" class="navbar-brand">
                     <!-- <h1 class="m-0 display-5 text-white"><span class="text-primary">i</span>DESIGN</h1> -->
-                    <img src="img/logo.png" class="logo" />
+                    <img src="img/logo.png" class="logo" alt="kuberawoods logo"/>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <!-- <span class="navbar-toggler-icon"></span> -->
@@ -126,7 +126,7 @@
             <div class="row no-gutters">
                 <div class="col-lg-5">
                     <div class="d-flex flex-column justify-content-center bg-primary h-100 p-5">
-                        <div class="d-inline-flex border border-secondary p-4 mb-4">
+                        <div class="d-inline-flex border border-secondary p-2 mb-4">
                             <h1 class="flaticon-office font-weight-normal text-secondary m-0 mr-3"></h1>
                             <div class="d-flex flex-column">
                                 <h4>Our Office</h4>
@@ -134,7 +134,7 @@
                                     Bangalore</p>
                             </div>
                         </div>
-                        <div class="d-inline-flex border border-secondary p-4 mb-4">
+                        <div class="d-inline-flex border border-secondary p-2 mb-4">
                             <h1 class="flaticon-email font-weight-normal text-secondary m-0 mr-3"></h1>
                             <div class="d-flex flex-column">
                                 <h4>Email Us</h4>
@@ -142,7 +142,7 @@
                                         href="mailto:sales@kuberawoods.com">sales@kuberawoods.com</a></p>
                             </div>
                         </div>
-                        <div class="d-inline-flex border border-secondary p-4 mb-4">
+                        <div class="d-inline-flex border border-secondary p-2 mb-4">
                             <h1 class="flaticon-telephone font-weight-normal text-secondary m-0 mr-3"></h1>
                             <div class="d-flex flex-column">
                                 <h4>Call Us</h4>
@@ -150,7 +150,7 @@
 
                             </div>
                         </div>
-                        <div class="d-inline-flex border align-items-center border-secondary p-4">
+                        <div class="d-inline-flex border align-items-center border-secondary p-2">
                             <h1 class="bi bi-geo-alt font-weight-normal text-secondary m-0 mr-3"></h1>
                             <div class="d-flex flex-column">
                                 <h4 class="mb-0">Find Our location</h4>
@@ -164,14 +164,14 @@
                         <div class="row no-gutters">
                             <div class="col-12">
                                 <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                    <input type="text" class="form-control p-2" id="name" placeholder="Your Name"
                                         required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="control-group">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                    <input type="email" class="form-control p-2" id="email" placeholder="Your Email"
                                         required="required"
                                         data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
@@ -179,7 +179,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="phoneNumber"
+                                    <input type="text" class="form-control p-2" id="phoneNumber"
                                         placeholder="Your Phone Number" required="required"
                                         data-validation-required-message="Please enter your phone number" />
                                     <p class="help-block text-danger"></p>
@@ -187,31 +187,48 @@
                             </div>
                             <div class="col-6">
                                 <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="propertyType"
-                                        placeholder="Your Property Type" required="required"
-                                        data-validation-required-message="Please enter your property type" />
+                                        <select name="propertyType" title="Your Property Type" class="form-control p-2" id="propertyType" 
+                                        placeholder="Your Property Type" required
+                                        data-validation-required-message="Please enter your Property Type">
+                                            <option selected value="">Your Property Type</option>
+                                            <option value="Apartment">Apartment</option>
+                                            <option value="Villa">Villa</option>
+                                            <option value="Commercial /Retail">Commercial /Retail</option>
+                                        </select>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="unitType"
-                                        placeholder="Your Unit Type" required="required"
-                                        data-validation-required-message="Please enter your unit type" />
+                                        <select name="unitType" title="Your Unit Type" class="form-control p-2" id="unitType" 
+                                        placeholder="Your Unit Type" required
+                                        data-validation-required-message="Please enter your Unit Type">
+                                            <option selected value="">Your Unit Type</option>
+                                            <option value="New">New</option>
+                                            <option value="Resale">Resale</option>
+                                            <option value="Existing">Existing</option>
+                                        </select>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="RoomType"
-                                        placeholder="Your Room Type" required="required"
-                                        data-validation-required-message="Please enter your RoomType type" />
+                                    <select name="RoomType" title="Your Room Type" class="form-control p-2" id="RoomType" 
+                                        placeholder="Your Room Type" required
+                                        data-validation-required-message="Please enter your Room Type">
+                                            <option selected value="">Your Room Type</option>
+                                            <option value="1BHk">1BHk</option>
+                                            <option value="2BHk">2BHk</option>
+                                            <option value="3BHk">3BHk</option>
+                                            <option value="4Bhk">4Bhk</option>
+                                            <option value="4bhk and above">4bhk and above</option>
+                                        </select>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="Budget" placeholder="Your Budget"
+                                    <input type="text" class="form-control p-2" id="Budget" placeholder="Your Budget"
                                         required="required"
                                         data-validation-required-message="Please enter your budget" />
                                     <p class="help-block text-danger"></p>
@@ -219,36 +236,61 @@
                             </div>
                             <div class="col-12">
                                 <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="areaSize"
-                                        placeholder="Your Area Size" required="required"
-                                        data-validation-required-message="Please enter your Area Size" />
+                                    <select name="areaSize" title="Your Property Type" class="form-control p-2" id="areaSize" 
+                                    placeholder="Your Area Size" required
+                                    data-validation-required-message="Please enter your Area Size">
+                                        <option selected value="">Your Area Size</option>
+                                        <option value="1000 SqFt">1000 SqFt</option>
+                                        <option value="1001-1500 sqft">1001-1500 sqft</option>
+                                        <option value="1501-2000 SqFt">1501-2000 SqFt</option>
+                                        <option value="2001-2500 SqFt">2001-2500 SqFt</option>
+                                        <option value="2501-3000 SqFt">2501-3000 SqFt</option>
+                                        <option value="Above 3000 SqFt">Above 3000 SqFt</option>
+                                        
+                                    </select>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="projectCommencement"
-                                        placeholder="Project Commencement (Optional)" />
+                                    <select name="projectCommencement" title="Your Project Commencement" class="form-control p-2" id="projectCommencement" 
+                                        placeholder="Your Project Commencement" required
+                                        data-validation-required-message="Please enter your project Commencement">
+                                            <option selected value="">Your Project Commencement</option>
+                                            <option value="ASAP">ASAP</option>
+                                            <option value="1-3 months">1-3 months</option>
+                                            <option value="4-6 months">4-6 months</option>
+                                    </select>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="control-group">
-                                    <textarea class="form-control p-4" rows="6" id="message"
+                                    <textarea class="form-control p-2" rows="6" id="message"
                                         placeholder="Remarks (Optional)"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="additionalServices"
-                                        placeholder="Additional Services(Optional)" />
+                                        <select name="additionalServices" title="Additional Services" class="form-control p-2" id="additionalServices" 
+                                            placeholder="Additional Services Required (Optional)" required data-validation-required-message="Please enter Additional Services Required">
+                                            <option selected value="">Additional Services</option>
+                                            <option value="False Ceiling">False Ceiling</option>
+                                            <option value="Customized Furniture">Customized Furniture</option>
+                                            <option value="Painting">Painting</option>
+                                            <option value="Wall Paintings">Wall Paintings</option>
+                                            <option value="Curtain/Blinds">Curtain/Blinds</option>
+                                            <option value="Tiles/ Wooden Flooring">Tiles/ Wooden Flooring</option>
+                                            <option value="Stone Cladding">Stone Cladding</option>
+                                            <option value="Wallpaper">Wallpaper</option>                                            
+                                        </select>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="control-group">
-                                    <textarea type="text" class="form-control p-4" id="Address"
+                                    <textarea type="text" class="form-control p-2" id="Address"
                                         placeholder="Address (Optional)"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>

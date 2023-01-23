@@ -1,6 +1,6 @@
 $(function () {
 
-    $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
+    $("#contactForm input, #contactForm textarea, #contactForm select").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
             console.log($form, event, errors)
@@ -12,7 +12,7 @@ $(function () {
             var message = $("#contactForm textarea#message").val();
             // var subject = $("#contactForm input#subject").val();
             var phone = $("#contactForm input#phoneNumber").val();
-            var propertyType = $("#contactForm input#propertyType").val();
+            var propertyType = $("#contactForm select#propertyType").val();
             var unitType = $("#contactForm input#unitType").val();
             var Budget = $("#contactForm input#Budget").val();
             var projectCommencement = $("#contactForm input#projectCommencement").val();
