@@ -13,12 +13,12 @@ $(function () {
             // var subject = $("#contactForm input#subject").val();
             var phone = $("#contactForm input#phoneNumber").val();
             var propertyType = $("#contactForm select#propertyType").val();
-            var unitType = $("#contactForm input#unitType").val();
+            var unitType = $("#contactForm select#unitType").val();
             var Budget = $("#contactForm input#Budget").val();
-            var projectCommencement = $("#contactForm input#projectCommencement").val();
-            var RoomType = $("#contactForm input#RoomType").val();
-            var areaSize = $("#contactForm input#areaSize").val();
-            var additionalServices = $("#contactForm input#additionalServices").val();
+            var projectCommencement = $("#contactForm select#projectCommencement").val();
+            var RoomType = $("#contactForm select#RoomType").val();
+            var areaSize = $("#contactForm select#areaSize").val();
+            var additionalServices = $("#contactForm select#additionalServices").val();
             var Address = $("#contactForm textarea#Address").val();
             // console.log(name, email, message, subject);
 
