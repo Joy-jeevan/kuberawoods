@@ -25,7 +25,7 @@ $to = "sales@kuberawoods.com"; // Change this email to your //
 
 $subject = "Quote For :  $name";
 $body = "You have received a new message from your website contact form.\n\n";
-$body .= "Here are the details:\n\nName: $name\n\n\nEmail: $email\n\Phone: $phone\n\nRemarks: $message";
+$body .= "Here are the details:\n\nName: $name\n\n\nEmail: $email\nPhone: $phone\n\nRemarks: $message";
 $body .="\n\nProperty Type: $propertyType\n\n\nUnit Type: $unitType\n\nBudget: $Budget\n\nRoom Type: $RoomType";
 $body .="\n\nAreaSize: $areaSize\n\n\nProject Commencement: $projectCommencement\n\nAdditional Services: $additionalServices\n\nAddress: $Address";
 $header = "From: $email";
