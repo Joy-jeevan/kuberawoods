@@ -85,11 +85,6 @@ section.fadeIn {
     animation: fadeIn .8s;
 }
 
-.service-container{
-    /* height: 540px; */
-    /* padding-top: 30px;
-    padding-bottom: 30px; */
-}
 
 .service_title{
     font-size: 1.5rem;
@@ -208,9 +203,6 @@ section.fadeIn {
         margin-top: 70px;
     }
 }
-
-
-
 @media (max-width: 1024px){
     .homepage_expTitle {
         text-align: left!important;
@@ -225,5 +217,34 @@ section.fadeIn {
         line-height: 35px!important;
         margin-left: 32px!important;
         text-align: left!important;
+    }
+}
+/*Job Work*/
+
+#about_us{
+    position: relative;
+    height: calc(100vh - 110px);
+}
+
+.image-wrap{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}
+
+.flexbox-center{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 551px) and (max-width: 800px){
+    #about_us{
+        position: relative;
+        height: 100%;
+    }
+    .container-fluid .container{
+        max-width: 100%;
     }
 }

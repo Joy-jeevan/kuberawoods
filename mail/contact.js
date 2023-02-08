@@ -1,12 +1,59 @@
+let isRecaptchaValidated = false;
+
+
+
+function toggleRecaptchaFormMessage(type = "error", hide = false) {
+  isRecaptchaValidated = false;
+  document.getElementById(`recaptcha-form-${type}`).style.display = hide
+    ? "none"
+    : "inherit";
+}
+
+function onRecaptchaSuccess() {
+  isRecaptchaValidated = true;
+}
+
+function onRecaptchaError() {
+  isRecaptchaValidated = false;
+  toggleRecaptchaFormMessage("error");
+  toggleRecaptchaFormMessage("success", true);
+}
+
+function onRecaptchaResponseExpiry() {
+  onRecaptchaError();
+}
+
 $(function () {
+    const recaptchaForm = $("#contactForm");
 
     $("#contactForm input, #contactForm textarea, #contactForm select").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
             console.log($form, event, errors)
+            // failure
+            if (!isRecaptchaValidated) {
+                toggleRecaptchaFormMessage("error");
+                toggleRecaptchaFormMessage("success", true);
+                return;
+            }
+
+            // success
+            toggleRecaptchaFormMessage("error", true);
+            toggleRecaptchaFormMessage("success");
         },
         submitSuccess: function ($form, event) {
             event.preventDefault();
+            // failure
+            if (!isRecaptchaValidated) {
+                toggleRecaptchaFormMessage("error");
+                toggleRecaptchaFormMessage("success", true);
+                return;
+            }
+
+            // success
+            toggleRecaptchaFormMessage("error", true);
+            toggleRecaptchaFormMessage("success");
+
             var name = $("#contactForm input#name").val();
             var email = $("#contactForm input#email").val();
             var message = $("#contactForm textarea#message").val();
