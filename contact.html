@@ -11,24 +11,28 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap"
+        rel="stylesheet" crossorigin>
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link rel="preload" as="font" href="lib/flaticon/font/flaticon.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> -->
+     <link rel="preload" as="style" href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!--<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
+
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/mystyle.css" rel="stylesheet">
+    <link rel="preload" as="style" href="css/style.css" rel="stylesheet">
+    <link rel="preload" as="style" href="css/mystyle.css" rel="stylesheet">
 </head>
 
 <body>
@@ -364,23 +368,18 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <!-- <script src="lib/easing/easing.min.js"></script>
-    
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script> -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer> </script>
+    <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script defer src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script defer src="https://www.google.com/recaptcha/api.js" async defer> </script>
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script defer src="mail/jqBootstrapValidation.min.js"></script>
+    <script defer src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/contact.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/contact.js"></script>
 </body>
 
 </html>
