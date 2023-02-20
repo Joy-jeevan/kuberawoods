@@ -115,38 +115,43 @@
         <div class="container contact-us">
             <div class="row no-gutters">
                 <div class="col-lg-5">
-                    <div class="d-flex flex-column justify-content-center bg-primary h-100 p-3 p-md-5">
-                        <div class="d-inline-flex border border-secondary p-2 mb-4">
-                            <h1 class="flaticon-office font-weight-normal text-secondary m-0 mr-3"></h1>
-                            <div class="d-flex flex-column">
-                                <h4>Our Office</h4>
-                                <p class="m-0 text-white">No 4, 1st Cross, Siddappa Garden, Chunchaghatta Main Road,
-                                    Bangalore</p>
+                    <div class="d-flex flex-column h-100 bg-primary p-3 p-md-5">
+                        <div class="h-100 d-flex flex-column justify-content-center">
+                            <div class="d-flex border border-secondary p-2 mb-4">
+                                <h1 class="flaticon-office font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div class="d-flex flex-column">
+                                    <h4>Our Office</h4>
+                                    <p class="m-0 text-white">No 4, 1st Cross, Siddappa Garden, Chunchaghatta Main Road,
+                                        Bangalore</p>
+                                </div>
+                            </div>
+                            <div class="d-flex border border-secondary p-2 mb-4">
+                                <h1 class="flaticon-email font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div class="d-flex flex-column">
+                                    <h4>Email Us</h4>
+                                    <p class="m-0 text-white"><a
+                                            href="mailto:sales@kuberawoods.com">sales@kuberawoods.com</a></p>
+                                </div>
+                            </div>
+                            <div class="d-flex border border-secondary p-2 mb-4">
+                                <h1 class="flaticon-telephone font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div class="d-flex flex-column">
+                                    <h4>Call Us</h4>
+                                    <p class="m-0 text-white"><a href="tel:+91 96204 82018">+91 96204 82018</a></p>
+    
+                                </div>
                             </div>
                         </div>
-                        <div class="d-inline-flex border border-secondary p-2 mb-4">
-                            <h1 class="flaticon-email font-weight-normal text-secondary m-0 mr-3"></h1>
-                            <div class="d-flex flex-column">
-                                <h4>Email Us</h4>
-                                <p class="m-0 text-white"><a
-                                        href="mailto:sales@kuberawoods.com">sales@kuberawoods.com</a></p>
-                            </div>
-                        </div>
-                        <div class="d-inline-flex border border-secondary p-2 mb-4">
-                            <h1 class="flaticon-telephone font-weight-normal text-secondary m-0 mr-3"></h1>
-                            <div class="d-flex flex-column">
-                                <h4>Call Us</h4>
-                                <p class="m-0 text-white"><a href="tel:+91 96204 82018">+91 96204 82018</a></p>
-
-                            </div>
-                        </div>
-                        <div class="d-none d-md-inline-flex border align-items-center border-secondary p-2">
-                            <h1 class="bi bi-geo-alt font-weight-normal text-secondary m-0 mr-3"></h1>
-                            <div class="d-flex flex-column">
-                                <h4 class="mb-0">Find Our location</h4>
+                        <div class="d-flex flex-column justify-content-end bg-primary">
+                            <div class="d-md-flex border align-items-center border-secondary p-2">
+                                <h1 class="bi bi-geo-alt font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div class="d-flex flex-column">
+                                    <h4 class="mb-0">Our location</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="col-lg-7 mb-5 my-lg-5 py-5 pl-lg-5">
                     <div id="success"></div>
@@ -154,15 +159,16 @@
                         <div class="row no-gutters">
                             <div class="col-12">
                                 <div class="control-group">
-                                    <input type="text" name="name" class="form-control p-2" id="name" placeholder="Your Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <input type="text" name="name" class="form-control p-2" id="name"
+                                        placeholder="Your Name" required="required"
+                                        data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="control-group">
-                                    <input type="email" name="email" class="form-control p-2" id="email" placeholder="Your Email"
-                                        required="required"
+                                    <input type="email" name="email" class="form-control p-2" id="email"
+                                        placeholder="Your Email" required="required"
                                         data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
@@ -218,8 +224,8 @@
                             </div>
                             <div class="col-6">
                                 <div class="control-group">
-                                    <input type="text" class="form-control p-2" name="Budget" id="Budget" placeholder="Your Budget"
-                                        required="required"
+                                    <input type="text" class="form-control p-2" name="Budget" id="Budget"
+                                        placeholder="Your Budget" required="required"
                                         data-validation-required-message="Please enter your budget" />
                                     <p class="help-block text-danger"></p>
                                 </div>
@@ -266,9 +272,9 @@
                                 <div class="control-group">
                                     <select name="additionalServices" title="Additional Services"
                                         class="form-control p-2" id="additionalServices"
-                                        placeholder="Additional Services Required (Optional)" required
-                                        data-validation-required-message="Please enter Additional Services Required">
-                                        <option selected value="">Additional Services</option>
+                                        placeholder="Additional Services Required (Optional)" >
+                                        <option selected value="">Additional Services (Optional)</option>
+                                        <option value="None">None</option>
                                         <option value="False Ceiling">False Ceiling</option>
                                         <option value="Customized Furniture">Customized Furniture</option>
                                         <option value="Painting">Painting</option>
@@ -347,8 +353,10 @@
                 <h4 class="text-primary mb-4">Quick Links</h4>
                 <div class="d-flex flex-column justify-content-start text-justify">
                     <a class="text-white mb-2" href="/index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="/index.html#aboutus"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="/index.html#services"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                    <a class="text-white mb-2" href="/index.html#aboutus"><i class="fa fa-angle-right mr-2"></i>About
+                        Us</a>
+                    <a class="text-white mb-2" href="/index.html#services"><i class="fa fa-angle-right mr-2"></i>Our
+                        Services</a>
                     <a href="/job-work.html" class="text-white mb-2"><i class="fa fa-angle-right mr-2"></i>Job Works</a>
                     <!-- <a class="text-white mb-2" href="/index.html#project"><i class="fa fa-angle-right mr-2"></i>Our
                         Projects</a> -->

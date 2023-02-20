@@ -28,8 +28,7 @@ $(function () {
 
     $("#contactForm input, #contactForm textarea, #contactForm select").jqBootstrapValidation({
         preventSubmit: true,
-        submitError: function ($form, event, errors) {
-            console.log($form, event, errors)
+        submitError: function ($form, event, errors) {   
             // failure
             if (!isRecaptchaValidated) {
                 toggleRecaptchaFormMessage("error");
@@ -37,9 +36,10 @@ $(function () {
                 return;
             }
 
-            // success
-            toggleRecaptchaFormMessage("error", true);
-            toggleRecaptchaFormMessage("success");
+            if (window.grecaptcha){
+                grecaptcha.reset();
+                isRecaptchaValidated = false;
+            } 
         },
         submitSuccess: function ($form, event) {
             event.preventDefault();
@@ -93,18 +93,23 @@ $(function () {
                 },
                 cache: false,
                 success: function (returnval) {
-                    console.log("success",returnval)
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
                     $('#success > .alert-success')
-                            .append("<strong>Your message has been sent. </strong>");
+                            .append("<strong>Thank you for taking the time to fill out our form. We will do our best to get back to you within 24-48 hours.</strong>");
                     $('#success > .alert-success')
                             .append('</div>');
                     // $('#contactForm').trigger("reset");
                 },
                 error: function (returnval) {
-                    console.log("erroe",returnval)
+                    if (window.grecaptcha) {
+                        isRecaptchaValidated = false;
+                        toggleRecaptchaFormMessage("error",true);
+                        toggleRecaptchaFormMessage("success",true);
+                        grecaptcha.reset();
+                        
+                    }
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
